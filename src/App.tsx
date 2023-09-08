@@ -1,19 +1,20 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import { Button } from 'src/Components';
 
 export function App() {
-  const [value, setValue] = useState(false)
+  const [value, setValue] = useState(false);
   useEffect(() => {
-    console.log('value', value)
-  })
+    console.log('value', value);
+  });
   return (
     <>
-      <button
+      <Button
         onClick={() => {
-          setValue((pre) => !pre)
+          setValue((pre) => !pre);
         }}
       >
         value: {value}
-      </button>
+      </Button>
     </>
-  )
+  );
 }
